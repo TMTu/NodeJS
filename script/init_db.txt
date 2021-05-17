@@ -1,0 +1,15 @@
+CREATE TABLE public."User"
+(
+    id text COLLATE pg_catalog."default" NOT NULL DEFAULT ''::text,
+    username text COLLATE pg_catalog."default" NOT NULL DEFAULT ''::text,
+    email text COLLATE pg_catalog."default" DEFAULT ''::text,
+    first_name text COLLATE pg_catalog."default" DEFAULT ''::text,
+    last_name text COLLATE pg_catalog."default" DEFAULT ''::text,
+    description text COLLATE pg_catalog."default" DEFAULT ''::text,
+    CONSTRAINT "User_pkey" PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public."User"
+    OWNER to postgres;
